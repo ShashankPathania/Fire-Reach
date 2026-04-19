@@ -1,0 +1,32 @@
+# === Core Framework ===
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-dotenv>=1.0.0
+pydantic>=2.6.0
+email-validator>=2.0.0
+
+# === Agent (LangGraph) ===
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# === LLM Providers ===
+groq>=0.11.0           # Groq (primary)
+httpx>=0.26.0          # Ollama fallback + Serper API calls
+
+# === Email ===
+sendgrid>=6.11.0       # SendGrid (primary)
+# smtplib is stdlib — no install needed (SMTP fallback)
+
+# === Database (async SQLite) ===
+sqlalchemy>=2.0.0
+aiosqlite>=0.19.0
+
+# === Testing ===
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
+httpx>=0.26.0          # TestClient
+
+# === Utilities ===
+python-dateutil>=2.8.2
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
