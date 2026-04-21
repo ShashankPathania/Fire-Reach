@@ -50,3 +50,9 @@ test_results.json
 
 # Docker volumes
 data/
+
+# Local prompt docs (not for repo)
+FireReach_Deployment_Demo_Prompt.md
+FireReach_Master_Prompt.md
+FireReach_Quick_Reference.md
+FireReach_UI_Prompt.md
